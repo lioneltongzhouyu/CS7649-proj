@@ -1,0 +1,17 @@
+1.dataset
+FolderA is the dataset of mojoco.
+
+In folderA, we register many different gym environment with mojoco. By doing so, we could change the environment by
+changing the xml file. (For example, in our file, we could change the eg length of the ant.)
+
+use command  "pip install -e ." in FolderA to regsiter.
+2.train expert
+Directly run run_expert.py file to get the expert and store in under checkpoints_experts/
+
+3.The script to run all the python file is in train_all.sh; If you want to run only one single train, you could just
+use that part of command line.
+
+! The tensorboard file of gail will be stored in the output directory.
+
+4.The script to draw the map is in plot_all.sh
+the map will be stored in the output/pic directory.
